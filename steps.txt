@@ -1,0 +1,47 @@
+#start k3 cluster
+# brew install k3d
+k3d cluster create \ 
+  --servers 1 \ 
+  --agents 1
+
+# kubectl config get-clusters 
+# kubectl config current-context
+#kubectl get nodes
+#kubectl get nodes --output wide
+#kubectl get nodes --output json
+#kubectl get node k3d-k3s-default-server-0 --output jsonpath="{.status.nodeInfo.architecture}"
+# kubectl top node
+# kubectl describe node
+
+
+
+# create app.py
+# create requirements.txt
+# create Dockerfile
+
+#docker build -t flask-app:0.1.0 . 
+#docker run --name flask-app -p 5000:5000 flask-app:0.1.0
+
+#Then, invoke the service with:
+
+#http://127.0.0.1:5000
+
+#You will see the text "Hello world" printed.
+
+#Stop the container with Control + C followed by
+
+#docker rm -f flask-app
+
+#First, register for an account with the Docker Hub, create an Access Token from Account Settings, and log in. Now build a new version of the image and push it to the registry.
+
+# Now edit the text in app.py and rebuild the container, and start it up again. This time, change the 0.1.0 to 0.1.1 to build a new image.
+#docker login --username tomrajput 
+# Paste the Access Token as your password
+
+#docker build -t docker.io/tomrajput/flask-app:0.1.1 . 
+#docker push tomrajput/flask-app:0.1.1
+
+# create pod.yaml
+
+
+
